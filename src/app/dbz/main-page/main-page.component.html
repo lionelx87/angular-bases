@@ -6,6 +6,9 @@
         <app-personajes [personajes]="personajes"></app-personajes>
     </div>
     <div class="col">
-        <app-agregar [personaje]="{ name: 'algo', power: 1000 }"></app-agregar>
+        <app-agregar 
+            [personaje]="{ name: 'algo', power: 1000 }"
+            (onNewCharacter)="add($event)"
+        ></app-agregar>
     </div>
 </div>

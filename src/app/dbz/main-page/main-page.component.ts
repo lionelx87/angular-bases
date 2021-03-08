@@ -16,4 +16,8 @@ export class MainPageComponent{
     ]
   }  
 
+  add(personaje: Personaje) {
+    this.personajes.push(personaje);
+  }
+
 }
