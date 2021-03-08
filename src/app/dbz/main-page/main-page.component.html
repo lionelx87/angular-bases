@@ -6,26 +6,6 @@
         <app-personajes [personajes]="personajes"></app-personajes>
     </div>
     <div class="col">
-        <h3>Agregar</h3>
-        <hr>
-
-        <form (ngSubmit)="add()">
-            <input 
-                type="text" 
-                placeholder="Nombre"
-                name="name"
-                [(ngModel)]="personaje.name"
-            >
-
-            <input 
-                type="number" 
-                placeholder="Poder"
-                name="power"
-                [(ngModel)]="personaje.power"
-            >
-
-            <button type="submit">Agregar</button>
-        </form>
-
+        <app-agregar [personaje]="{ name: 'algo', power: 1000 }"></app-agregar>
     </div>
 </div>
