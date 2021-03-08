@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Personaje } from '../interfaces/dbz.interfaces';
 import { DbzService } from '../services/dbz.service';
 
 @Component({
@@ -8,9 +7,6 @@ import { DbzService } from '../services/dbz.service';
 })
 export class MainPageComponent{
 
-
-  constructor(private dbzService: DbzService) {
-    
-  }
+  constructor(private dbzService: DbzService) { }
 
 }
